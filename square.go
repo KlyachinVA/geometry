@@ -27,3 +27,12 @@ func (a * Point ) Norm() float64{
 	return math.Sqrt(Dot(*a,*a))
 	}
 
+
+func (a * Point)Add(b Point) Point{
+	var c = new(Point)
+	c.X = a.X + b.X
+	c.Y = a.Y + b.Y
+	c.Z = a.Z + b.Z
+	return *c
+
+	}
