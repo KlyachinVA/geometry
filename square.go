@@ -36,3 +36,15 @@ func (a * Point)Add(b Point) Point{
 	return *c
 
 	}
+
+
+func (a * Point)Sub(b Point) Point{
+        var c = new(Point)
+        c.X = a.X - b.X
+        c.Y = a.Y - b.Y
+        c.Z = a.Z - b.Z
+        return *c
+
+        }
+
+
